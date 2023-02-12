@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <h1 class="text-4xl font-bold text-center mt-12">
+    Let's Get Some <span class="text-3xl text-red-600 ">Moooooney</span> !!!
+  </h1>
+  <main>
+    <section class="mt-12 text-white">
+      <div class="grid grid-cols-3 gap-4 mx-auto w-9/12">
+        <div class="text-2xl bg-green-400  px-6 py-3 rounded-lg ">
+          <h4 class="text-3xl">Deposit</h4>
+          <p  class="text-2xl">$<span id="deposit-total" class="text-2xl">00</span></p>
+        </div>
+        <div class="text-2xl bg-yellow-400  px-6 py-3 rounded-lg ">
+          <h4>Withdrew</h4>
+          <p class="text-2xl">$<span id="withdraw-total" class="text-2xl">00</span></p>
+        </div>
+        <div class="text-2xl bg-sky-400  px-6 py-3 rounded-lg ">
+          <h4>Balance</h4>
+          <p class="text-2xl">$<span id="Balance" class="text-2xl">1250</span></p>
+        </div>
+
+      </div>
+    </section>
+    <section class="mt-12">
+      <div class="grid grid-cols-2 gap-4 mx-auto w-9/12">
+        <div class="text-2xl bg-green-400  px-6 py-3 rounded-lg ">
+          <h4 class="text-3xl text-white"> Please Deposit</h4>
+          <input class="text-2xl w-9/12 mt-2 rounded-lg mb-2 px-3 " type="text" name="" id="Deposit-amount"
+            placeholder="$ Enter Your Deposit Amount">
+          <button id="btn-deposit"
+            class="text-2xl text-white bg-sky-400 hover:bg-amber-900 rounded-lg px-8 py-2 mt-2">Withdrew</button>
+        </div>
+        <div class="text-2xl bg-sky-400  px-6 py-3 rounded-lg  ">
+          <h4 class="text-3xl text-white">Plese Withdrew</h4>
+          <input class="w-9/12 mb-2 px-3  mt-2 rounded-lg " type="text" name="" id="withdraw-amout"
+            placeholder=" $ Enter Your Amount Withdrew">
+          <button id="btn-withdew"
+            class="text-2xl text-white bg-amber-400 hover:bg-yellow-900 rounded-lg px-8 py-2 mt-2">Withdrew</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/doposit.js"></script>
+  <script src="js/withdraw.js"></script>
+</body>
+
+</html>
